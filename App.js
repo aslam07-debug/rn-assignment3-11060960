@@ -44,7 +44,53 @@ export default function App() {
            <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
            <Image source={require("./Images/young woman working at desk.png")} style={{left:16}}/>
         </View>
+        
       </View>
+
+      <View style={styles.category}>
+        <View style={styles.category1}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Code</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/prog (1).png")} style={{left:30,height:100}}/>
+        </View>
+
+        <View style={styles.category2}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Cook</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/cook.png")} style={{left:16,width:100}} />
+        </View>
+        
+      </View>
+      <View style={styles.category}>
+        <View style={styles.category1}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Meditation</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/meditate.png")} style={{left:16}}/>
+        </View>
+
+        <View style={styles.category2}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Reading</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/reading_(2)-transformed.png")} style={{left:16}}/>
+        </View>
+        
+      </View>
+      
+      <View style={styles.category}>
+        <View style={styles.category1}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Meeting</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/meeting (1).jpg")} style={{left:9}}/>
+        </View>
+
+        <View style={styles.category2}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>working</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/working_(1)-transformed.png")} style={{left:16}}/>
+        </View>
+        
+      </View>
+       
 
       {/* On-going task section */}
       <Text style={{top:200 , left:20,fontWeight:700,fontSize:30}}>Ongoing Task</Text>
@@ -58,6 +104,46 @@ export default function App() {
         <View style={styles.Task}>
          <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Push Ups </Text>
         </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Data Analysis </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Game dev </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Social media Marketting </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>House meetings </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Cooking Tutorials </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Gymnastic learn </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Learn Meditation </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Running </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Chemistry Tutorials </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Math Tutorials </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Java Tutorials </Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Guitar Session</Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Learn Turkish</Text>
+        </View>
+
        </View>
       <StatusBar style="auto" />
     </View>
@@ -71,7 +157,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f0e8',
      borderRadius:30,
      width: 420 ,
-     height:1000,
+     height:3350,
      fontStyle:'Lato'
     
   },
@@ -145,8 +231,8 @@ justifyContent:'gap'
   borderWidth:1,
   borderRadius:15,
   borderColor:'#fbf9f7',
-  backgroundColor:'#fbf9f7'
-
+  backgroundColor:'#fbf9f7',
+ marginBottom:10,
  },
  category2:{
   width:175,
