@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,Image,TextInput } from 'react-native';
+import { StyleSheet, Text, View,Image,TextInput,ScrollView } from 'react-native';
 
 export default function App() {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.frame1}>
         <Text style={{fontWeight:700 , fontSize:32,}}>Hello , Devs</Text>
@@ -18,7 +19,7 @@ export default function App() {
         <TextInput style={styles.searchBloc}   />
          <View style={styles.searchText}>
           <Image source={require("./Images/Vector.png")} style={styles.searchIcon} />
-          <Text style={{top:130 , right:220 , fontSize:16 , fontWeight:700}}>Search</Text>
+          <Text style={{top:130 , right:240 , fontSize:16 , fontWeight:700}}>Search</Text>
          </View>
 
          <View  style={styles.filter}>
@@ -45,23 +46,37 @@ export default function App() {
         </View>
       </View>
 
+      {/* On-going task section */}
+      <Text style={{top:200 , left:20,fontWeight:700,fontSize:30}}>Ongoing Task</Text>
+      <View style={{display:'flex',flexDirection:'column' ,justifyContent:'space-evenly'}}>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Mobile App Development</Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Web Development</Text>
+        </View>
+        <View style={styles.Task}>
+         <Text style={{textAlign:'center',top:50,left:-65,fontWeight:500,fontSize:16}}>Push Ups </Text>
+        </View>
+       </View>
       <StatusBar style="auto" />
     </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'yellow',
+    backgroundColor: '#f7f0e8',
      borderRadius:30,
      width: 420 ,
-     height:852,
+     height:1000,
     
   },
   frame1:{
     top:70,
-    left:40,
+    left:20,
     width:354,
     height:52,
     flexDirection:'row',
@@ -75,6 +90,7 @@ const styles = StyleSheet.create({
   },
  Ellipse1:{
   width:50,
+  right:-30,
   backgroundColor:'#ffffff',
   height:50,
   borderRadius:30,
@@ -84,7 +100,7 @@ const styles = StyleSheet.create({
   height:50,
  borderWidth:1,
   top:120,
-  left:40,
+  left:20,
   borderRadius:14,
   border: 'Mixed solid #FBF9F7',
  },
@@ -92,7 +108,7 @@ const styles = StyleSheet.create({
   width:16,
   height:16,
   top:135,
-  right:230,
+  right:250,
   
 
  }
@@ -136,6 +152,17 @@ justifyContent:'gap'
   borderStyle:'solid',
   borderWidth:1,
   borderRadius:15,
- }
+ },
+ Task:{
+width:365,
+height:128,
+top:205,
+left:20,
+borderWidth:1,
+borderRadius:15,
+borderColor:'#E8D1BA',
+marginBottom:10,
+backgroundColor:'#fbf9f7'
+ },
 
 });
