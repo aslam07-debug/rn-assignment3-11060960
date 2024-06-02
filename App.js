@@ -25,6 +25,26 @@ export default function App() {
            <Image source={require("./Images/Vector (1).png")} style={{left:10, top:11}} />
          </View>
       </View>
+
+      {/* Category Section */}
+      <View>
+        <Text style={{fontStyle:'lato' , top:160, left:20, fontWeight:700, fontSize:20, lineHeight:24}}>Categories</Text>
+      </View>
+
+      <View style={styles.category}>
+        <View style={styles.category1}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Exercise</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/young woman working online.png")} style={{left:16}}/>
+        </View>
+
+        <View style={styles.category2}>
+           <Text style={{fontSize:16,fontWeight:700, left:10, fontStyle:'lato'}}>Study</Text>
+           <Text style={{left:10,top:-4,fontSize:11}}>12 Tasks</Text>
+           <Image source={require("./Images/young woman working at desk.png")} style={{left:16}}/>
+        </View>
+      </View>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -92,5 +112,30 @@ const styles = StyleSheet.create({
   borderStyle:'solid',
   backgroundColor:'#f0522f',
  },
+ category:{
+display:'flex',
+flexDirection:'row',
+justifyContent:'gap'
+
+ },
+ category1:{
+  width:175,
+  height:185,
+  top:170,
+  left:18,
+  borderStyle:'solid',
+  borderWidth:1,
+  borderRadius:15,
+
+ },
+ category2:{
+  width:175,
+  height:185,
+  top:170,
+  left:40,
+  borderStyle:'solid',
+  borderWidth:1,
+  borderRadius:15,
+ }
 
 });
