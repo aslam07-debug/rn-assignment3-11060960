@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
      borderRadius:30,
      width: 420 ,
      height:1000,
+     fontStyle:'Lato'
     
   },
   frame1:{
@@ -102,7 +103,8 @@ const styles = StyleSheet.create({
   top:120,
   left:20,
   borderRadius:14,
-  border: 'Mixed solid #FBF9F7',
+  borderColor:'#fbf9f7',
+  backgroundColor:'#fbf9f7'
  },
  searchIcon:{
   width:16,
@@ -142,6 +144,8 @@ justifyContent:'gap'
   borderStyle:'solid',
   borderWidth:1,
   borderRadius:15,
+  borderColor:'#fbf9f7',
+  backgroundColor:'#fbf9f7'
 
  },
  category2:{
@@ -152,6 +156,8 @@ justifyContent:'gap'
   borderStyle:'solid',
   borderWidth:1,
   borderRadius:15,
+  borderColor:'#fbf9f7',
+  backgroundColor:'#fbf9f7'
  },
  Task:{
 width:365,
